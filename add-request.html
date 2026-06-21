@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Request</title>
+
+<link rel="stylesheet" href="add-request.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="form-card">
+
+        <h1>➕ Add New Request</h1>
+
+     <form action="add-request.php" method="POST">
+
+    <input type="text" name="student_name" placeholder="Student Name" required>
+
+    <input type="text" name="reg_no" placeholder="Register Number" required>
+
+    <input type="text" name="department" placeholder="Department" required>
+
+    <select name="year" required>
+        <option>Select Year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+    </select>
+
+    <select name="document_type" required>
+        <option>Select Document Type</option>
+        <option>Bonafide Certificate</option>
+        <option>OD Form</option>
+    </select>
+
+    <input type="date" name="submission_date" required>
+
+    <button type="submit">
+        <i class="fa-solid fa-plus"></i>
+        Create Request
+    </button>
+
+</form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

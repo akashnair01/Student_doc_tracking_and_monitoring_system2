@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update Status</title>
+
+<link rel="stylesheet" href="update-status.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="status-card">
+
+        <h1>🔄 Update Request Status</h1>
+
+        <form action="update-status.php" method="POST">
+
+            <input type="text"
+name="remarks"
+placeholder="Enter Remarks (if rejected)">
+            <input type="text"
+                   name="reg_no"
+                   placeholder="Enter Register Number"
+                   required>
+
+            <select name="status" required>
+                <option value="">Select New Status</option>
+                <option value="Submitted">Submitted</option>
+                <option value="Office Received">Office Received</option>
+                <option value="HOD Review">HOD Review</option>
+                <option value="HOD Approved">HOD Approved</option>
+                <option value="Principal Review">Principal Review</option>
+                <option value="Principal Approved">Principal Approved</option>
+                <option value="Ready For Collection">Ready For Collection</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+            <button type="submit">
+                Update Status
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
